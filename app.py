@@ -39,7 +39,11 @@ st.set_page_config(
 def load_artifacts():
     closure_model = joblib.load(ARTIFACT_DIR / "closure_model.joblib")
     duration_model = joblib.load(ARTIFACT_DIR / "duration_model.joblib")
-    recommender = joblib.load(ARTIFACT_DIR / "resource_recommender.joblib")
+    try:
+        recommender = joblib.load(ARTIFACT_DIR / "resource_recommender.joblib")
+    except Exception as e:
+        st.error(f"Recommender load failed: {e}")
+        recommender = None
     return closure_model, duration_model, recommender
 
 
