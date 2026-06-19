@@ -34,7 +34,7 @@ from sklearn.neighbors import NearestNeighbors
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 
 warnings.filterwarnings("ignore")
-
+DATA_PATH = None
 OUT_DIR = Path("artifacts")
 OUT_DIR.mkdir(exist_ok=True)
 
