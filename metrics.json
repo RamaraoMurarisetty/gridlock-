@@ -1,0 +1,26 @@
+{
+  "priority_model": {
+    "n_train": 6536,
+    "n_test": 1635,
+    "accuracy": 0.999,
+    "f1": 0.999,
+    "roc_auc": 1.0,
+    "base_rate": 0.618
+  },
+  "closure_model": {
+    "n_train": 6538,
+    "n_test": 1635,
+    "accuracy": 0.884,
+    "f1": 0.308,
+    "roc_auc": 0.777,
+    "base_rate": 0.074
+  },
+  "duration_model": {
+    "n_train": 2067,
+    "n_test": 517,
+    "MAE_minutes": 295.4,
+    "RMSE_minutes": 704.2,
+    "R2_log_scale": -0.049,
+    "median_actual_minutes": 49.0
+  }
+}
