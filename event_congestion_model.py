@@ -35,9 +35,8 @@ from sklearn.preprocessing import OneHotEncoder, StandardScaler
 
 warnings.filterwarnings("ignore")
 
-DATA_PATH = "/mnt/project/Astram_event_data_anonymized__Astram_event_data_anonymizedb40ac87.csv"
-OUT_DIR = Path("/home/claude/work/artifacts")
-OUT_DIR.mkdir(parents=True, exist_ok=True)
+OUT_DIR = Path("artifacts")
+OUT_DIR.mkdir(exist_ok=True)
 
 CAT_COLS = ["event_type", "event_cause", "corridor", "zone", "police_station",
             "veh_type", "authenticated"]
